@@ -1,0 +1,176 @@
+/***
+ * CSS Reset
+ * A modern CSS reset that removes default browser styles
+ * Version: 1.11.3 (2024-08-25)
+ * Source: https://github.com/elad2412/the-new-css-reset
+ */
+
+/* Base reset - removes all styles except display */
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
+  all: unset;
+  display: revert;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Interactive elements */
+a,
+button {
+  cursor: revert;
+}
+
+/* Lists */
+ol,
+ul,
+menu,
+summary {
+  list-style: none;
+}
+
+ol {
+  counter-reset: revert;
+}
+
+/* Media */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+  loading: lazy;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Form elements */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* Preformatted text */
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* Placeholders */
+::placeholder {
+  color: unset;
+}
+
+/* Hidden elements */
+:where([hidden]) {
+  display: none;
+}
+
+/* Content editable */
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* Draggable elements */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
+/* Modal dialogs */
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* Details summary */
+::-webkit-details-marker {
+  display: none;
+}
+
+/* Set the default font family and optical sizing for the html element */
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Center the body content and set constraints for width and height */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 375px;
+  min-height: 100vh;
+}
+
+/* Navigation bar styles
+ * Flex container for header navigation
+ * Horizontally aligns logo and button with space between
+ * Centers items vertically
+ * Adds padding around navigation contents
+ */
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+/* Logo styles
+ * Sets specific dimensions for the dark version of navigation logo
+ * Width: 79px for proper layout spacing
+ * Height: 20px to maintain aspect ratio
+ */
+.nav__logo-dark {
+  height: 20px;
+  width: 79px;
+}
+
+/* Navigation button styles
+ * Default dark colored button used in navigation
+ * Properties:
+ * - Dark blue background (#13183f)
+ * - White text
+ * - Rounded corners (50px radius)
+ * - Bold 18px font
+ * - Fixed dimensions (168px x 59px)
+ * - 32px horizontal & 16px vertical padding
+ */
+.nav__button {
+  background-color: #13183f;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  height: 59px;
+  padding: 16px 32px;
+  width: 168px;
+}
