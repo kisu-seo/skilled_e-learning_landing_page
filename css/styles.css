@@ -6,9 +6,7 @@
  */
 
 /* Base reset - removes all styles except display */
-*:where(
-    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
-  ) {
+*:where( :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
 }
@@ -130,12 +128,7 @@ body {
   min-height: 100vh;
 }
 
-/* Navigation bar styles
- * Flex container for header navigation
- * Horizontally aligns logo and button with space between
- * Centers items vertically
- * Adds padding around navigation contents
- */
+/* Navigation bar styles */
 .nav {
   align-items: center;
   display: flex;
@@ -143,26 +136,13 @@ body {
   padding: 16px 20px;
 }
 
-/* Logo styles
- * Sets specific dimensions for the dark version of navigation logo
- * Width: 79px for proper layout spacing
- * Height: 20px to maintain aspect ratio
- */
+/* Logo styles */
 .nav__logo-dark {
   height: 20px;
   width: 79px;
 }
 
-/* Navigation button styles
- * Default dark colored button used in navigation
- * Properties:
- * - Dark blue background (#13183f)
- * - White text
- * - Rounded corners (50px radius)
- * - Bold 18px font
- * - Fixed dimensions (168px x 59px)
- * - 32px horizontal & 16px vertical padding
- */
+/* Navigation button styles */
 .nav__button {
   background-color: #13183f;
   border: none;
@@ -173,4 +153,58 @@ body {
   height: 59px;
   padding: 16px 32px;
   width: 168px;
+}
+
+/* Main header section that contains the header content */
+.main-header {
+  padding: 64px 20px;
+}
+
+/* Header title styles */
+.header-section__article h1 {
+  color: #13183f;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+/* Article paragraph styles */
+.header-section__article p {
+  color: #83869a;
+  font-size: 18px;
+  font-weight: medium;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* Header section button styles */
+.header-section__btn {
+  background: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  height: 59px;
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  width: 168px;
+}
+
+/* Main content styles */
+main {
+  padding: 64px 20px 80px;
+}
+
+/* Section title styles */
+.section-title__heading {
+  background: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  border-radius: 16px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 32px;
+  padding: 32px;
 }
