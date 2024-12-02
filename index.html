@@ -14,96 +14,175 @@
 </head>
 
 <body>
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <figure class="nav__logo-dark">
-      <img src="./assets/logo-dark.svg" alt="Skilled e-learning platform logo" width="89" height="35">
-    </figure>
-    <button class="nav__button" type="button" aria-label="Get Started with our courses">
-      <a href="#">Get Started</a>
-    </button>
-  </nav>
 
-  <header class="main-header">
-    <section class="hero-section">
-      <article class="header-section__article">
-        <h1 class="main-title">Maximize skill, minimize budget</h1>
-        <p class="header-description">
-          Our modern courses across a range of in-demand skills will give you the
-          knowledge you need to live the life <br> you want.
-        </p>
-      </article>
-      <a href="#" class="header-section__btn">
-        <button type="button" aria-label="Get Started with our courses">Get Started</button>
-      </a>
-      <figure class="header-section__img">
-        <img src="./assets/image-hero-mobile.webp" alt="Student learning online through Skilled e-learning platform"
-          width="327" height="auto" loading="eager">
+  <!-- Navigation bar containing logo and CTA button -->
+  <div class="nav-header-container">
+
+    <!-- Navigation bar containing logo and CTA button -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+
+      <!-- Logo container -->
+      <figure class="nav__logo-dark">
+        <img src="./assets/logo-dark.svg" alt="Skilled e-learning platform logo - Online education platform" width="80"
+          height="20">
       </figure>
-    </section>
-  </header>
+      <!-- Call-to-action button linking to courses section -->
+      <a href="#courses" class="nav__button" role="button" aria-label="Get Started with our courses">Get Started</a>
+    </nav>
+    <!-- Main header section containing hero content -->
+    <header class="header-container">
+      <!-- Hero section with main value proposition -->
+      <section class="header-section">
+        <!-- Header content container -->
+        <div class="header-section__content">
+          <!-- Article containing main heading and description -->
+          <article class="header-section__article">
+            <h1 class="main-title">Maximize skill, minimize budget</h1>
+            <p class="header-description">
+              Our modern courses across a range of in-demand skills will give you the knowledge you need to live the
+              life
+              <br>you want.
+            </p>
+          </article>
+          <!-- Call-to-action button linking to courses section -->
+          <a href="#courses" class="header-section__btn" role="button" aria-label="Get Started with our courses">Get
+            Started</a>
+        </div>
+      </section>
 
-  <main>
+      <!-- Hero image showing student learning -->
+      <figure class="header-section__img">
+        <img src="./assets/image-hero-mobile@2x.webp"
+          alt="Student learning online through Skilled e-learning platform - Quality education from home"
+          loading="eager" class="header-section__img-mobile">
+        <img src="./assets/image-hero-tablet.webp"
+          alt="Student learning online through Skilled e-learning platform - Quality education from home" width="768"
+          height="auto" loading="eager" class="header-section__img-tablet">
+        <img src="./assets/image-hero-desktop.webp"
+          alt="Student learning online through Skilled e-learning platform - Quality education from home" width="1110"
+          height="auto" loading="eager" class="header-section__img-desktop">
+      </figure>
+    </header>
 
-    <section class="section-title">
-      <h2 class="section-title__heading">Check out our most popular courses!</h2>
-    </section>
+  </div>
 
-    <section>
-      <article>
-        <figure><img src="./assets/icon-animation.svg" alt=""></figure>
-        <h3>Animation</h3>
-        <p>
+  <main class="main-content">
+
+    <!-- Popular courses section -->
+    <h2 class="section-title">Check out our most popular courses!</h2>
+
+    <section class="section-courses">
+      <!-- Icon container -->
+      <figure class="section-courses__article-img">
+        <img src="./assets/icon-animation.svg" alt="Animation course icon" width="56" height="56">
+      </figure>
+      <!-- Animation course card -->
+      <article class="section-courses__article">
+        <!-- Title -->
+        <h3 class="section-courses__article-title">Animation</h3>
+        <!-- Description -->
+        <p class="section-courses__article-description">
           Learn the latest animation techniques to create stunning motion
           design and captivate your audience.
         </p>
-        <p>Get Started</p>
+        <!-- Call-to-action button linking to courses section -->
+        <a href="#" class="section-courses__article-btn" aria-label="Start Animation course">Get Started</a>
       </article>
+    </section>
 
-      <article>
-        <figure><img src="./assets/icon-design.svg" alt=""></figure>
-        <h3>Design</h3>
-        <p>
+    <section class="section-courses">
+      <!-- Icon container -->
+      <figure class="section-courses__article-img">
+        <img src="./assets/icon-design.svg" alt="Design course icon" width="56" height="56">
+      </figure>
+      <!-- Design course card -->
+      <article class="section-courses__article">
+        <!-- Title -->
+        <h3 class="section-courses__article-title">Design</h3>
+        <!-- Description -->
+        <p class="section-courses__article-description">
           Create beautiful, usable interfaces to help shape the future of
           how the web looks.
         </p>
-        <p>Get Started</p>
+        <!-- Call-to-action button linking to courses section -->
+        <a href="#" class="section-courses__article-btn" aria-label="Start Design course">Get Started</a>
       </article>
+    </section>
 
-      <article>
-        <figure><img src="./assets/icon-photography.svg" alt=""></figure>
-        <h3>Photography</h3>
-        <p>
+    <section class="section-courses">
+      <!-- Icon container -->
+      <figure class="section-courses__article-img">
+        <img src="./assets/icon-photography.svg" alt="Photography course icon" width="56" height="56">
+      </figure>
+      <!-- Photography course card -->
+      <article class="section-courses__article">
+        <!-- Title -->
+        <h3 class="section-courses__article-title">Photography</h3>
+        <!-- Description -->
+        <p class="section-courses__article-description">
           Explore critical fundamentals like lighting, composition, and focus
           to capture exceptional photos.
         </p>
-        <p>Get Started</p>
+        <!-- Call-to-action button linking to courses section -->
+        <a href="#" class="section-courses__article-btn" aria-label="Start Photography course">Get Started</a>
       </article>
+    </section>
 
-      <article>
-        <figure><img src="./assets/icon-crypto.svg" alt=""></figure>
-        <h3>Crypto</h3>
-        <p>
+    <section class="section-courses">
+      <!-- Icon container -->
+      <figure class="section-courses__article-img">
+        <img src="./assets/icon-crypto.svg" alt="Cryptocurrency course icon" width="56" height="56">
+      </figure>
+      <!-- Cryptocurrency course card -->
+      <article class="section-courses__article">
+        <!-- Title -->
+        <h3 class="section-courses__article-title">Crypto</h3>
+
+        <!-- Description -->
+        <p class="section-courses__article-description">
           All you need to know to get started investing in crypto. Go from
           beginner to advanced with this 54 hour course.
         </p>
-        <p>Get Started</p>
+        <!-- Call-to-action button linking to courses section -->
+        <a href="#" class="section-courses__article-btn" aria-label="Start Cryptocurrency course">Get Started</a>
       </article>
+    </section>
 
-      <article>
-        <figure><img src="./assets/icon-marketing.svg" alt=""></figure>
-        <h3>Business</h3>
-        <p>
+    <section class="section-courses">
+      <!-- Icon container -->
+      <figure class="section-courses__article-img">
+        <img src="./assets/icon-business.svg" alt="Business course icon" width="56" height="56">
+      </figure>
+
+      <!-- Business course card -->
+      <article class="section-courses__article">
+
+        <!-- Title -->
+        <h3 class="section-courses__article-title">Business</h3>
+
+        <!-- Description -->
+        <p class="section-courses__article-description">
           A step-by-step playbook to help you start, scale, and sustain your
           business without outside investment.
         </p>
-        <p>Get Started</p>
+
+        <!-- Call-to-action button linking to courses section -->
+        <a href="#" class="section-courses__article-btn" aria-label="Start Business course">Get Started</a>
       </article>
     </section>
   </main>
 
-  <footer>
-    <img src="./assets/logo-light.svg" alt="">
-    <button><a href="#">Get Started</a></button>
+  <!-- Footer section containing logo and CTA button -->
+  <footer class="footer" role="contentinfo">
+
+    <!-- Light version of logo for footer -->
+    <figure class="footer__logo-light">
+      <img src="./assets/logo-light.svg" alt="Skilled e-learning platform logo - Online education platform" width="80"
+        height="20">
+    </figure>
+
+    <!-- Call-to-action button linking to courses section -->
+    <a href="#courses" class="footer__btn" role="button" aria-label="Get Started with our courses">Get Started</a>
   </footer>
 
 </body>

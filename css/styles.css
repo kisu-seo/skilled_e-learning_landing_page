@@ -117,6 +117,8 @@ meter {
 html {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
+  overflow-x: hidden;
+
 }
 
 /* Center the body content and set constraints for width and height */
@@ -149,15 +151,21 @@ body {
   border-radius: 50px;
   color: #fff;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   height: 59px;
   padding: 16px 32px;
   width: 168px;
 }
 
 /* Main header section that contains the header content */
-.main-header {
-  padding: 64px 20px;
+.header-container {
+  padding: 64px 20px 0;
+}
+
+/* Hide tablet and desktop images by default */
+.header-section__img-tablet,
+.header-section__img-desktop {
+  display: none;
 }
 
 /* Header title styles */
@@ -193,12 +201,13 @@ body {
 }
 
 /* Main content styles */
-main {
+.main-content {
+  background: linear-gradient(to bottom, #fff, #f0f1ff);
   padding: 64px 20px 80px;
 }
 
 /* Section title styles */
-.section-title__heading {
+.section-title {
   background: linear-gradient(to bottom, #ff6f48, #f02aa6);
   border-radius: 16px;
   color: #fff;
@@ -208,3 +217,135 @@ main {
   margin-bottom: 32px;
   padding: 32px;
 }
+
+/* Icon container styles */
+.section-courses__article-img {
+  margin-left: 32px;
+}
+
+/* Course card styles */
+.section-courses__article {
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: -28px;
+  padding: 64px 32px 40px;
+}
+
+/* Add margin bottom to all course cards */
+.section-courses {
+  margin-bottom: 32px;
+}
+
+/* Remove margin bottom from last course card */
+.section-courses:last-child {
+  margin-bottom: 0;
+}
+
+/* Course card title styles */
+.section-courses__article-title {
+  color: #13183f;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+/* Course card description styles */
+.section-courses__article-description {
+  color: #83869a;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* Course card call-to-action button styles */
+.section-courses__article-btn {
+  color: #f74780;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Footer section styles */
+.footer {
+  align-items: center;
+  background-color: #13183f;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 20px;
+}
+
+/* Footer call-to-action button styles */
+.footer__btn {
+  background: linear-gradient(to bottom, #4851ff, #f02aa6);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 48px;
+  padding: 12px 24px;
+  width: 152px;
+}
+
+@media (min-width: 768px) {
+
+  /* Body styles */
+  body {
+    position: relative;
+    overflow: hidden;
+    max-width: 768px;
+  }
+
+  /* Navigation styles */
+  .nav {
+    padding: 24px 44px;
+  }
+
+  /* Navigation button styles */
+  .nav__button {
+    width: 152px;
+    height: 48px;
+    padding: 12px 24px;
+  }
+
+  /* Header section image styles */
+  .header-section__img-mobile {
+    display: none;
+  }
+
+  /* Header container styles */
+  .header-container {
+    padding: 64px 44px;
+  }
+
+  /* Header section styles */
+  .header-section {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    padding: 41.5px 0;
+  }
+
+  /* Header section button styles */
+  .header-section__btn {
+    height: 48px;
+    margin-bottom: 0;
+    padding: 12px 24px;
+    width: 152px;
+  }
+
+  /* Header section image styles */
+  .header-section__img-tablet {
+    display: block;
+    left: 365px;
+    position: absolute;
+    top: -90px;
+    width: auto;
+  }
+
+  .main-content {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 64px 44px 144px;
+  }
