@@ -343,9 +343,37 @@ body {
     width: auto;
   }
 
+  /* Main content styles */
   .main-content {
     display: grid;
-    gap: 24px;
+    row-gap: 32px;
+    column-gap: 24px;
     grid-template-columns: repeat(2, 1fr);
     padding: 64px 44px 144px;
   }
+
+  /* Section title styles */
+  .section-title {
+    padding: 64px 32px 40px;
+    margin-top: 28px;
+    margin-bottom: 0;
+  }
+
+  /* Course card styles */
+  .section-courses {
+    margin-bottom: 0;
+  }
+
+  .section-courses__article-description {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .design-description {
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    padding: 24px 44px;
+  }
+}
