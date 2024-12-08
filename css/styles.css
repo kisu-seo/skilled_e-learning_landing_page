@@ -113,15 +113,13 @@ meter {
   display: none;
 }
 
-/* Set the default font family and optical sizing for the html element */
+/* Base styles */
 html {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   overflow-x: hidden;
-
 }
 
-/* Center the body content and set constraints for width and height */
 body {
   display: flex;
   flex-direction: column;
@@ -130,7 +128,7 @@ body {
   min-height: 100vh;
 }
 
-/* Navigation bar styles */
+/* Layout components */
 .nav {
   align-items: center;
   display: flex;
@@ -138,14 +136,7 @@ body {
   padding: 16px 20px;
 }
 
-/* Logo styles */
-.nav__logo-dark {
-  height: 20px;
-  width: 79px;
-}
-
-/* Navigation button styles */
-.nav__button {
+.nav__btn {
   background-color: #13183f;
   border: none;
   border-radius: 50px;
@@ -157,18 +148,17 @@ body {
   width: 168px;
 }
 
-/* Main header section that contains the header content */
 .header-container {
   padding: 64px 20px 0;
 }
 
-/* Hide tablet and desktop images by default */
+/* Image visibility */
 .header-section__img-tablet,
 .header-section__img-desktop {
   display: none;
 }
 
-/* Header title styles */
+/* Typography */
 .header-section__article h1 {
   color: #13183f;
   font-size: 40px;
@@ -177,7 +167,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* Article paragraph styles */
 .header-section__article p {
   color: #83869a;
   font-size: 18px;
@@ -186,7 +175,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* Header section button styles */
+/* Buttons */
 .header-section__btn {
   background: linear-gradient(to bottom, #ff6f48, #f02aa6);
   border-radius: 50px;
@@ -200,13 +189,12 @@ body {
   width: 168px;
 }
 
-/* Main content styles */
+/* Main content */
 .main-content {
   background: linear-gradient(to bottom, #fff, #f0f1ff);
   padding: 64px 20px 80px;
 }
 
-/* Section title styles */
 .section-title {
   background: linear-gradient(to bottom, #ff6f48, #f02aa6);
   border-radius: 16px;
@@ -218,12 +206,11 @@ body {
   padding: 32px;
 }
 
-/* Icon container styles */
+/* Course cards */
 .section-courses__article-img {
   margin-left: 32px;
 }
 
-/* Course card styles */
 .section-courses__article {
   background-color: #fff;
   border-radius: 15px;
@@ -231,17 +218,14 @@ body {
   padding: 64px 32px 40px;
 }
 
-/* Add margin bottom to all course cards */
 .section-courses {
   margin-bottom: 32px;
 }
 
-/* Remove margin bottom from last course card */
 .section-courses:last-child {
   margin-bottom: 0;
 }
 
-/* Course card title styles */
 .section-courses__article-title {
   color: #13183f;
   font-size: 20px;
@@ -250,7 +234,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* Course card description styles */
 .section-courses__article-description {
   color: #83869a;
   font-size: 16px;
@@ -259,15 +242,14 @@ body {
   margin-bottom: 24px;
 }
 
-/* Course card call-to-action button styles */
 .section-courses__article-btn {
   color: #f74780;
   font-size: 18px;
   font-weight: 700;
 }
 
-/* Footer section styles */
-.footer {
+/* Footer */
+.footer-container {
   align-items: center;
   background-color: #13183f;
   display: flex;
@@ -275,7 +257,6 @@ body {
   padding: 24px 20px;
 }
 
-/* Footer call-to-action button styles */
 .footer__btn {
   background: linear-gradient(to bottom, #4851ff, #f02aa6);
   border-radius: 50px;
@@ -287,38 +268,32 @@ body {
   width: 152px;
 }
 
+/* Tablet styles */
 @media (min-width: 768px) {
-
-  /* Body styles */
   body {
     position: relative;
     overflow: hidden;
     max-width: 768px;
   }
 
-  /* Navigation styles */
   .nav {
     padding: 24px 44px;
   }
 
-  /* Navigation button styles */
-  .nav__button {
+  .nav__btn {
     width: 152px;
     height: 48px;
     padding: 12px 24px;
   }
 
-  /* Header section image styles */
   .header-section__img-mobile {
     display: none;
   }
 
-  /* Header container styles */
   .header-container {
     padding: 64px 44px;
   }
 
-  /* Header section styles */
   .header-section {
     display: grid;
     gap: 24px;
@@ -326,7 +301,6 @@ body {
     padding: 41.5px 0;
   }
 
-  /* Header section button styles */
   .header-section__btn {
     height: 48px;
     margin-bottom: 0;
@@ -334,7 +308,6 @@ body {
     width: 152px;
   }
 
-  /* Header section image styles */
   .header-section__img-tablet {
     display: block;
     left: 365px;
@@ -343,7 +316,6 @@ body {
     width: auto;
   }
 
-  /* Main content styles */
   .main-content {
     display: grid;
     row-gap: 32px;
@@ -352,14 +324,12 @@ body {
     padding: 64px 44px 144px;
   }
 
-  /* Section title styles */
   .section-title {
     padding: 64px 32px 40px;
     margin-top: 28px;
     margin-bottom: 0;
   }
 
-  /* Course card styles */
   .section-courses {
     margin-bottom: 0;
   }
@@ -373,7 +343,134 @@ body {
     margin-bottom: 50px;
   }
 
-  .footer {
+  .footer-container {
     padding: 24px 44px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+    padding: 0 80px;
+    background: linear-gradient(to bottom, #fff, #f0f1ff);
+  }
+
+  .nav {
+    padding: 24px 0;
+  }
+
+  .nav__btn {
+    width: 168px;
+    height: 59px;
+    padding: 16px 32px;
+  }
+
+  .nav__btn:hover {
+    background-color: #666ca3;
+    cursor: pointer;
+  }
+
+  .nav-header-container {
+    max-width: 1120px;
+    margin: auto;
+  }
+
+  .nav__logo-dark-img {
+    width: 111px;
+    height: 28px;
+  }
+
+  .header-section__img-tablet {
+    display: none;
+  }
+
+  .header-container {
+    padding: 64px 0;
+  }
+
+  .header-section {
+    align-items: center;
+    height: 560px;
+    padding: 0;
+    width: 1120px;
+  }
+
+  .header-section__article h1 {
+    font-size: 56px;
+  }
+
+  .header-section__article p {
+    width: 457px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .header-section__btn {
+    width: 168px;
+    height: 59px;
+    padding: 16px 32px;
+  }
+
+  .header-section__btn:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(to bottom, #FF6F48 0%, #F02AA6 100%);
+    cursor: pointer;
+  }
+
+  .header-section__img-desktop {
+    display: block;
+    position: absolute;
+    right: -340px;
+    top: -140px;
+    width: auto;
+    z-index: -1;
+  }
+
+  .main-content {
+    background: none;
+    column-gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding: 64px 0 144px;
+    row-gap: 56px;
+    width: 1120px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .section-courses__article-title {
+    font-size: 24px;
+  }
+
+  .photography-description {
+    margin-bottom: 50px;
+  }
+
+  .footer-container {
+    margin: 0 -80px;
+    padding: 24px 160px;
+  }
+
+  .footer__logo-light-img {
+    width: 111px;
+    height: 28px;
+  }
+
+  .footer__btn {
+    width: 168px;
+    height: 59px;
+    padding: 16px 32px;
+  }
+
+  .footer__btn:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(to bottom, #4851ff 0%, #f02aa6 100%);
+    cursor: pointer;
   }
 }

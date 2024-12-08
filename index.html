@@ -19,16 +19,17 @@
   <div class="nav-header-container">
 
     <!-- Navigation bar containing logo and CTA button -->
-    <nav class="nav" role="navigation" aria-label="Main navigation">
+    <nav class="nav" aria-label="Main navigation">
 
       <!-- Logo container -->
-      <figure class="nav__logo-dark">
-        <img src="./assets/logo-dark.svg" alt="Skilled e-learning platform logo - Online education platform" width="80"
-          height="20">
-      </figure>
+
+      <img src="./assets/logo-dark.svg" alt="Skilled e-learning platform logo - Online education platform" width="80"
+        height="20" class="nav__logo-dark-img">
+
       <!-- Call-to-action button linking to courses section -->
-      <a href="#courses" class="nav__button" role="button" aria-label="Get Started with our courses">Get Started</a>
+      <a href="#" class="nav__btn" role="button" aria-label="Get Started with our courses">Get Started</a>
     </nav>
+
     <!-- Main header section containing hero content -->
     <header class="header-container">
       <!-- Hero section with main value proposition -->
@@ -120,7 +121,7 @@
         <!-- Title -->
         <h3 class="section-courses__article-title">Photography</h3>
         <!-- Description -->
-        <p class="section-courses__article-description">
+        <p class="section-courses__article-description photography-description">
           Explore critical fundamentals like lighting, composition, and focus
           to capture exceptional photos.
         </p>
@@ -176,14 +177,13 @@
   <!-- Footer section containing logo and CTA button -->
   <footer class="footer" role="contentinfo">
 
-    <!-- Light version of logo for footer -->
-    <figure class="footer__logo-light">
+    <div class="footer-container">
+      <!-- Light version of logo for footer -->
       <img src="./assets/logo-light.svg" alt="Skilled e-learning platform logo - Online education platform" width="80"
-        height="20">
-    </figure>
-
-    <!-- Call-to-action button linking to courses section -->
-    <a href="#courses" class="footer__btn" role="button" aria-label="Get Started with our courses">Get Started</a>
+        height="20" class="footer__logo-light-img">
+      <!-- Call-to-action button linking to courses section -->
+      <a href="#courses" class="footer__btn" role="button" aria-label="Get Started with our courses">Get Started</a>
+    </div>
   </footer>
 
 </body>
