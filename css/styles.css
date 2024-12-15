@@ -117,11 +117,12 @@ meter {
 html {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
   display: flex;
+  overflow-x: hidden;
   flex-direction: column;
   margin: auto;
   max-width: 375px;
